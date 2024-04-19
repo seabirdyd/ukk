@@ -1,0 +1,180 @@
+/* Set background color and padding for the navbar */
+.navbar {
+  background-color: #FF7B54;
+  padding: 15px;
+}
+
+/* Change the color of the navbar links */
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Add hover effect for the navbar links */
+.navbar a:hover {
+  color: #ccc;
+}
+
+/* Set the position and background color of the navbar brand */
+.navbar-brand {
+  position: relative;
+  top: 5px;
+  padding: 0 15px;
+  background-color: #FF7B54;
+}
+
+/* Add a right margin to the navbar toggle button */
+.navbar-toggler {
+  margin-right: 15px;
+}
+
+/* Add active effect to the navbar links */
+.nav-link.active {
+  background-color: #555;
+  color: #fff;
+}
+
+/* Set the position and style for the user dropdown menu */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 0;
+  background-color: #e29077;
+}
+
+/* Set the style for the dropdown items */
+.dropdown-item {
+  padding: 10px 20px;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+  font-weight: normal;
+  
+}
+
+/* Add hover effect for the dropdown items */
+.dropdown-item:hover {
+  background-color: rgb(245, 146, 115);
+}
+
+/* Add active effect for the dropdown items */
+.dropdown-item.active {
+  background-color: #e5e5e5;
+}
+
+/* Set the style for the dropdown toggle button */
+.dropdown-toggle::after {
+  display: none;
+}
+
+/* Set the position and style for the user dropdown menu on mobile view */
+@media (max-width: 991px) {
+  .dropdown-menu {
+    position: relative;
+    width: 100%;
+  }
+  .dropdown-item {
+    padding: 8px 20px;
+  }
+}
+
+body {
+  padding: 1rem;
+  background-color: #FEE8B0;
+}
+.bg-hero{
+    background: url('../img/big-entrance-gate-bali-indonesia.jpg') no-repeat;
+    background-size: cover;
+    
+}
+.navbar-brand {
+    transition: transform 0.3s ease;
+  }
+  
+  .navbar-collapse {
+    transition: all 0.3s ease;
+  }
+  
+  .navbar-nav .nav-link {
+    transition: transform 0.3s ease;
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    transition: transform 0.3s ease;
+  }
+  
+  .navbar-toggler {
+    padding: 0.5rem 0.75rem;
+    border: none;
+    background-color: transparent;
+  }
+  
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+  
+  .navbar-dark .navbar-toggler-icon {
+    filter: invert(1);
+  }
+  
+  .navbar-dark .navbar-toggler-icon:hover {
+    filter: brightness(1.2);
+  }
+  
+  .navbar-dark .navbar-toggler-icon:active {
+    filter: brightness(0.9);
+  }
+  
+  .navbar-dark .navbar-brand {
+    color: #fff;
+  }
+  
+  .navbar-dark .navbar-brand:hover {
+    transform: scale(1.1);
+  }
+  
+  .navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.7);
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-dark .navbar-nav .nav-link:hover {
+    color: #fff;
+  }
+  
+  .navbar-dark .navbar-collapse.collapse {
+    height: auto;
+  }
+  
+  .navbar-dark .navbar-collapse.collapsing {
+    height: auto !important;
+  }
+  
+  .navbar-dark .navbar-collapse.show {
+    overflow: hidden;
+  }
+  
+  .navbar-dark .navbar-nav .nav-link.active {
+    color: #fff;
+  }
+  
+  @media (max-width: 991.98px) {
+    .navbar-dark .navbar-nav .nav-link {
+      padding: 0.5rem 1rem;
+    }
+  
+    .navbar-dark .navbar-toggler {
+      padding: 0.5rem;
+    }
+  
+    .navbar-dark .navbar-toggler-icon {
+      width: 1.5em;
+      height: 1.5em;
+    }
+  }
