@@ -24,7 +24,7 @@
                             $deskripsi_album=@$_POST['deskripsi_album'];
                             $tanggal=date('Y-m-d');
                             $user_id=@$_SESSION['user_id'];
-                            $insert=mysqli_query($conn, "INSERT INTO gallery_albumVALUES('','$nama_album','$deskripsi_album','$tanggal','$user_id')");
+                            $insert=mysqli_query($conn, "INSERT INTO gallery_album VALUES('','$nama_album','$deskripsi_album','$tanggal','$user_id')");
                             if ($insert) {
                                 echo 'Berhasil Membuat Album';
                                 echo '<meta http-equiv="refresh" content="0.8; url=?url=album">';

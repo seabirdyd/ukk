@@ -1,6 +1,11 @@
 <?php
 include 'koneksi.php';
 
+if (!isset($_SESSION['username'])) {
+    header("Location: ?url=login");
+    exit();
+}
+
 $query_album = "SELECT COUNT(*) as jumlah_album FROM gallery_album";
 $result_album = mysqli_query($conn, $query_album);
 $row_album = mysqli_fetch_assoc($result_album);

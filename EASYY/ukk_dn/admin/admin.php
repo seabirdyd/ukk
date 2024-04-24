@@ -1,6 +1,11 @@
 <?php
 include 'koneksi.php';
 
+if (!isset($_SESSION['username'])) {
+    header("Location: ?url=login");
+    exit();
+}
+
 if (isset($_POST['submit'])) {
     $nama_album = $_POST['nama_album'];
     $query = "INSERT INTO gallery_album (AlbumID, NamaAlbum) VALUES (NULL, '$nama_album')";
